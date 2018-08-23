@@ -415,9 +415,8 @@ public class Interface extends javax.swing.JFrame {
         text = txtWindow.getText();
         if (text.length() > 0){
             num=1/(Double.parseDouble(text));
-            //text = num.toString();
-           text2 = String.valueOf(num);
-           txtWindow.setText(text2);
+            text2 = String.valueOf(num);
+            txtWindow.setText(text2);
         }
     }//GEN-LAST:event_jButton19ActionPerformed
 
@@ -576,22 +575,18 @@ public class Interface extends javax.swing.JFrame {
         String response;
         
         if (sign.equals("-")){
-            //result = Double.parseDouble(memory1)-Double.parseDouble(memory2);
             result = Arithmetic.substraction(memory1, memory2, sign);
         }
         
         if (sign.equals("+")){
-            //result = Double.parseDouble(memory1)+Double.parseDouble(memory2);
             result = Arithmetic.adition(memory1, memory2, sign);
         }
         
         if (sign.equals("*")){
-            //result = Double.parseDouble(memory1)*Double.parseDouble(memory2);
             result = Arithmetic.multiplication(memory1, memory2, sign);
         }
         
         if (sign.equals("/")){
-            //result = Double.parseDouble(memory1)/Double.parseDouble(memory2);
             result = Arithmetic.division(memory1, memory2, sign);
         }
         
